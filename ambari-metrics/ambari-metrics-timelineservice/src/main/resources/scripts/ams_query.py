@@ -24,6 +24,9 @@ import sys
 import optparse
 import time
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # http://162.216.148.45:6188/ws/v1/timeline/metrics?
 # metricNames=rpc.rpc.RpcAuthenticationSuccesses
 # &appId=nodemanager&hostname=local.0&startTime=1414152029&endTime=1414155629

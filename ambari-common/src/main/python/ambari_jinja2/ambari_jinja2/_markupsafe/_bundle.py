@@ -14,6 +14,8 @@ import sys
 import os
 import re
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def rewrite_imports(lines):
     for idx, line in enumerate(lines):

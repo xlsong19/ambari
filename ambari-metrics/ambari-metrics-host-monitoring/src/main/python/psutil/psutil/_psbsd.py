@@ -10,6 +10,9 @@ import errno
 import os
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from psutil import _common
 from psutil import _psposix
 from psutil._common import conn_tmap, usage_percent

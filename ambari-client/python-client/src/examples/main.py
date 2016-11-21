@@ -20,6 +20,8 @@ import sys
 import logging
 from ambari_client.ambari_api import  AmbariClient 
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def main():
 

@@ -28,6 +28,9 @@ import time
 import xml
 import xml.etree.ElementTree as ET
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 logger = logging.getLogger('AmbariTakeoverConfigMerge')
 
 

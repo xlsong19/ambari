@@ -46,6 +46,10 @@ import HeartbeatHandlers
 from HeartbeatHandlers import bind_signal_handlers
 from ambari_commons.constants import AMBARI_SUDO_BINARY
 from resource_management.core.logger import Logger
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 logger = logging.getLogger()
 alerts_logger = logging.getLogger('ambari_alerts')
 

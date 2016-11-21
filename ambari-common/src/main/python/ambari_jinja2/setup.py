@@ -37,6 +37,9 @@ For more informations visit the new `Jinja2 webpage`_ and `documentation`_.
 """
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from setuptools import setup, Extension, Feature
 
 debugsupport = Feature(

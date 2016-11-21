@@ -23,6 +23,9 @@ from resource_management import *
 
 from mysql_service import mysql_service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class MysqlServer(Script):
 
   def install(self, env):

@@ -25,6 +25,9 @@ import urllib2
 import base64
 import httplib
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # simplejson is much faster comparing to Python 2.6 json module and has the same functions set.
 import ambari_simplejson as json
 

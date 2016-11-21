@@ -15,6 +15,9 @@ from ambari_jinja2.testsuite import JinjaTestCase, filesystem_loader
 
 from ambari_jinja2 import Environment, TemplateSyntaxError
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 env = Environment(loader=filesystem_loader)
 
 

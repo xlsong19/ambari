@@ -25,6 +25,9 @@ import shutil
 import sys
 import subprocess
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons.exceptions import FatalException
 from ambari_commons.firewall import Firewall
 from ambari_commons.inet_utils import force_download_file, download_progress

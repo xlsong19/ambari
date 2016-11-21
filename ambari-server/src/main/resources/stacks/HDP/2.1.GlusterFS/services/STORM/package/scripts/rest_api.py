@@ -24,6 +24,8 @@ from storm import storm
 from service import service
 from service_check import ServiceCheck
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class StormRestApi(Script):
   def install(self, env):

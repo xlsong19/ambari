@@ -20,6 +20,9 @@ limitations under the License.
 
 import platform, os, sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 path = os.path.abspath(__file__)
 path = os.path.join(os.path.dirname(os.path.dirname(path)), "psutil", "build")
 

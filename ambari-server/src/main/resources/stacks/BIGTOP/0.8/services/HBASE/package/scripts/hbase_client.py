@@ -23,6 +23,8 @@ from resource_management import *
 
 from hbase import hbase
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
          
 class HbaseClient(Script):
   def install(self, env):

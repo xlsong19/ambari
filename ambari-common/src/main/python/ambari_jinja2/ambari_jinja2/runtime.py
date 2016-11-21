@@ -16,6 +16,8 @@ from ambari_jinja2.utils import Markup, partial, soft_unicode, escape, missing, 
 from ambari_jinja2.exceptions import UndefinedError, TemplateRuntimeError, \
      TemplateNotFound
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # these variables are exported to the template runtime
 __all__ = ['LoopContext', 'TemplateReference', 'Macro', 'Markup',

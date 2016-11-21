@@ -20,6 +20,9 @@ import sys
 import unicodedata
 from ambari_client.core import errors
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 LOG = logging.getLogger(__name__)
 
 

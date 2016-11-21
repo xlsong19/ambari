@@ -37,6 +37,8 @@ import sys
 
 import psutil
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 POSIX = os.name == 'posix'
 

@@ -28,6 +28,8 @@ from core.controller import Controller
 from core.config_reader import Configuration, PID_OUT_FILE, SERVER_LOG_FILE, SERVER_OUT_FILE
 from core.stop_handler import bind_signal_handlers
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 logger = logging.getLogger()
 

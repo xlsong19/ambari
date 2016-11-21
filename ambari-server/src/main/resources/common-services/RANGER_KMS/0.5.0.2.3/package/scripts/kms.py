@@ -39,6 +39,9 @@ import re
 import time
 import socket
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def password_validation(password, key):
   import params
   if password.strip() == "":

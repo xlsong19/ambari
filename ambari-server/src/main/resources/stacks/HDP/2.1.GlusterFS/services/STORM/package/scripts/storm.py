@@ -22,6 +22,8 @@ from resource_management import *
 from yaml_config import yaml_config
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def storm():
   import params

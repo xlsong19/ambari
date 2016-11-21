@@ -27,6 +27,9 @@ import glob
 import subprocess
 from ambari_commons import OSConst,OSCheck
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # PostgreSQL settings
 PG_STATUS_RUNNING_DEFAULT = "running"
 PG_HBA_ROOT_DEFAULT = "/var/lib/pgsql/data"

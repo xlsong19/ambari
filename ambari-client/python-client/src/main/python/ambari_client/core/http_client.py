@@ -18,6 +18,10 @@
 import logging
 import posixpath
 import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
     import pycurl
 # pycurl is not necessary for testcases, mock it

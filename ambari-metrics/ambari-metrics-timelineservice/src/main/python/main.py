@@ -22,6 +22,9 @@ import os
 import subprocess
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons.exceptions import FatalException, NonFatalException
 from ambari_commons.logging_utils import print_info_msg, print_warning_msg, print_error_msg
 from ambari_metrics_collector.serviceConfiguration import get_java_exe_path, get_java_cp, build_jvm_args, \

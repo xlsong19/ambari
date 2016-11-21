@@ -29,6 +29,8 @@ from ambari_commons.os_windows import SvcStatusCallback
 from ambari_server.serverConfiguration import configDefaults, get_ambari_properties, get_value_from_properties, \
   DEBUG_MODE_KEY, PID_NAME, SERVER_OUT_FILE_KEY, SUSPEND_START_MODE_KEY, VERBOSE_OUTPUT_KEY
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class AmbariServerService(AmbariService):
   AmbariService._svc_name_ = "Ambari Server"

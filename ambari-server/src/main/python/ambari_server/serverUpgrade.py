@@ -28,6 +28,9 @@ import re
 import glob
 import optparse
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons.exceptions import FatalException
 from ambari_commons.logging_utils import print_info_msg, print_warning_msg, print_error_msg, get_verbose
 from ambari_commons.os_utils import is_root, run_os_command

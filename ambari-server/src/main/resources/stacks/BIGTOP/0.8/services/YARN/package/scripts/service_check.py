@@ -22,6 +22,9 @@ Ambari Agent
 from resource_management import *
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class ServiceCheck(Script):
   def service_check(self, env):
     import params

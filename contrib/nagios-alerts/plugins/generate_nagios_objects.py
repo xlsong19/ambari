@@ -24,6 +24,9 @@ import sys
 import base64
 import traceback
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 SERVICE_DEFINITION = '''
 define service {
         use                             generic-service

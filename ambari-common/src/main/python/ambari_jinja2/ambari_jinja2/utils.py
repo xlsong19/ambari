@@ -11,6 +11,10 @@
 import re
 import sys
 import errno
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
     from thread import allocate_lock
 except ImportError:

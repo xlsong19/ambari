@@ -33,6 +33,9 @@ from ambari_commons.os_utils import find_in_path
 from ambari_agent.AmbariConfig import AmbariConfig, updateConfigServerHostname
 from ambari_agent.HeartbeatHandlers import HeartbeatStopHandlers
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 AMBARI_VERSION_VAR = "AMBARI_VERSION_VAR"
 
 SETUP_ACTION = "setup"

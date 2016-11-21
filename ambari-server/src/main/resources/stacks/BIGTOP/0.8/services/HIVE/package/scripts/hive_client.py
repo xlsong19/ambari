@@ -22,6 +22,9 @@ from resource_management import *
 
 from hive import hive
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class HiveClient(Script):
   def install(self, env):
     import params

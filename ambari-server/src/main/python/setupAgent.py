@@ -25,6 +25,9 @@ import logging
 import os
 import subprocess
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons import OSCheck, OSConst
 from ambari_commons.os_family_impl import OsFamilyFuncImpl, OsFamilyImpl
 

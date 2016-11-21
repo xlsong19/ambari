@@ -23,6 +23,9 @@ import os
 import sys
 import traceback
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 RECOMMEND_COMPONENT_LAYOUT_ACTION = 'recommend-component-layout'
 VALIDATE_COMPONENT_LAYOUT_ACTION = 'validate-component-layout'
 RECOMMEND_CONFIGURATIONS = 'recommend-configurations'

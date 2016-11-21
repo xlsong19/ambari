@@ -27,6 +27,9 @@ import os
 import sys
 import time
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from apscheduler.scheduler import Scheduler
 from alerts.collector import AlertCollector
 from alerts.metric_alert import MetricAlert

@@ -25,6 +25,8 @@ from hbase import hbase
 from hbase_service import hbase_service
 from hbase_decommission import hbase_decommission
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
          
 class HbaseMaster(Script):
   def install(self, env):

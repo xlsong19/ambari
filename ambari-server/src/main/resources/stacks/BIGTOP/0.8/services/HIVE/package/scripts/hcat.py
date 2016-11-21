@@ -21,6 +21,8 @@ limitations under the License.
 from resource_management import *
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def hcat():
   import params

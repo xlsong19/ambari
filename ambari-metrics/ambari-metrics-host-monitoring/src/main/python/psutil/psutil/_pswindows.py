@@ -10,6 +10,9 @@ import errno
 import os
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from psutil import _common
 from psutil._common import conn_tmap, usage_percent, isfile_strict
 from psutil._compat import PY3, xrange, wraps, lru_cache, namedtuple

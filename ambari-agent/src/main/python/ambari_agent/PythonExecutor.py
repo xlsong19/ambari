@@ -33,6 +33,8 @@ import sys
 from ambari_commons import shell
 from ambari_commons.shell import shellRunner
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 logger = logging.getLogger()
 

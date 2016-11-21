@@ -27,6 +27,9 @@ import pprint
 import logging
 import copy
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 logger = logging.getLogger()
 
 class PythonReflectiveExecutor(PythonExecutor):

@@ -21,6 +21,9 @@ import os
 import subprocess
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons.exceptions import FatalException
 from ambari_commons.logging_utils import get_debug_mode, print_warning_msg, print_info_msg, \
   set_debug_mode_from_options

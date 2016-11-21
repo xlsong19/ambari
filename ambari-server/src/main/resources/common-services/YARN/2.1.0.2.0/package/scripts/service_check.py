@@ -30,6 +30,9 @@ from ambari_commons import OSConst
 from ambari_commons.os_family_impl import OsFamilyImpl
 from resource_management.libraries.functions.get_user_call_output import get_user_call_output
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 CURL_CONNECTION_TIMEOUT = '5'
 
 class ServiceCheck(Script):

@@ -28,6 +28,9 @@ from pig import pig
 from ambari_commons import OSConst
 from ambari_commons.os_family_impl import OsFamilyFuncImpl, OsFamilyImpl
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class PigClient(Script):
   def configure(self, env):
     import params

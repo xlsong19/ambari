@@ -13,6 +13,10 @@ import socket
 import stat
 import sys
 import warnings
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
     import threading
 except ImportError:

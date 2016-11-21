@@ -22,6 +22,9 @@ import sys
 import zipfile
 import os
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # Default values are hardcoded here
 BACKUP_PROCESS = 'backup'
 RESTORE_PROCESS = 'restore'

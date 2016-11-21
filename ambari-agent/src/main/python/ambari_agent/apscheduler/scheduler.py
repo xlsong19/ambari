@@ -9,6 +9,9 @@ from logging import getLogger
 import os
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from apscheduler.util import *
 from apscheduler.triggers import SimpleTrigger, IntervalTrigger, CronTrigger
 from apscheduler.jobstores.ram_store import RAMJobStore

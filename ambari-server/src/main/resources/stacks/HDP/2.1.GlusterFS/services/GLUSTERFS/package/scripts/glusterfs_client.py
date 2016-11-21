@@ -20,6 +20,9 @@ import sys
 from resource_management import *
 from glusterfs import glusterfs
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class GlusterFSClient(Script):
 
   def configure(self, env):

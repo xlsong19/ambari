@@ -28,6 +28,9 @@ import utils
 import common
 import hawq_constants
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def __setup_master_specific_conf_files():
   """
   Sets up config files only applicable for HAWQ Master and Standby nodes

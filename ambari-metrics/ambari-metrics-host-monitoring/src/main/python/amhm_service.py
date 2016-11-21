@@ -31,6 +31,8 @@ from core.config_reader import SERVER_OUT_FILE, SERVICE_USERNAME_KEY, SERVICE_PA
 from core.stop_handler import bind_signal_handlers, StopHandler
 from main import server_process_main
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 #
 # Windows-specific service implementation. This class will be instantiated directly by pythonservice.exe.

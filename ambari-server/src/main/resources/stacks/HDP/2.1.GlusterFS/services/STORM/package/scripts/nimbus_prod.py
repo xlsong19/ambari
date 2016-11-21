@@ -23,6 +23,8 @@ from resource_management import *
 from storm import storm
 from supervisord_service import supervisord_service, supervisord_check_status
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Nimbus(Script):
   def install(self, env):

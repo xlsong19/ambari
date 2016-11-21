@@ -23,6 +23,8 @@ import os
 from resource_management import *
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def zookeeper(type = None):
   import params

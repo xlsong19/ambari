@@ -80,6 +80,8 @@ from django.template.debug import DebugVariableNode as VariableNode
 from django.templatetags import i18n as i18n_tags
 from StringIO import StringIO
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 _node_handlers = {}
 _resolved_filters = {}

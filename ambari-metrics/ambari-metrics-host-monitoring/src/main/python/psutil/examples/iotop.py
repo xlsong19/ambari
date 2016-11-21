@@ -39,6 +39,8 @@ import time
 import curses
 import atexit
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # --- curses stuff
 def tear_down():

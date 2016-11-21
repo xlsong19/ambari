@@ -15,6 +15,8 @@ import time
 from psutil._common import sdiskusage, usage_percent, memoize
 from psutil._compat import PY3, unicode
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class TimeoutExpired(Exception):
     pass

@@ -14,6 +14,9 @@ import time
 import tempfile
 import unittest
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_jinja2.testsuite import JinjaTestCase
 
 from ambari_jinja2 import Environment, Template, TemplateSyntaxError, \

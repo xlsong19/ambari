@@ -22,6 +22,9 @@ import os
 import sys
 import platform
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def _get_windows_version():
   """
   Get's the OS major and minor versions.  Returns a tuple of

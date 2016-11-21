@@ -28,6 +28,8 @@ from exceptions import FatalException, NonFatalException, TimeoutError
 from logging_utils import *
 from os_check import OSCheck
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def openurl(url, timeout=socket._GLOBAL_DEFAULT_TIMEOUT, *args, **kwargs):
   """

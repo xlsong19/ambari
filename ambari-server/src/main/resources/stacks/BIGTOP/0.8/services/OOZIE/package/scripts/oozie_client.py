@@ -25,6 +25,8 @@ from oozie import oozie
 from oozie import correct_hadoop_auth_jar_files
 from oozie_service import oozie_service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
          
 class OozieClient(Script):
   def install(self, env):

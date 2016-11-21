@@ -25,6 +25,9 @@ from resource_management import *
 from zookeeper import zookeeper
 from zookeeper_service import zookeeper_service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class ZookeeperServer(Script):
   def install(self, env):
     self.install_packages(env)

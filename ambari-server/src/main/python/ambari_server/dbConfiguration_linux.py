@@ -28,6 +28,9 @@ import sys
 import time
 import pwd
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons import OSCheck, OSConst
 from ambari_commons.logging_utils import get_silent, get_verbose, print_error_msg, print_info_msg, print_warning_msg
 from ambari_commons.exceptions import NonFatalException, FatalException

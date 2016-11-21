@@ -22,6 +22,8 @@ import sys
 from resource_management import *
 from resource_management.libraries import Hook
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 #Hook for hosts with only client without other components
 class AfterInstallHook(Hook):

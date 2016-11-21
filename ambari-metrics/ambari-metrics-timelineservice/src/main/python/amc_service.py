@@ -22,6 +22,9 @@ import optparse
 import os
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons.ambari_service import AmbariService
 from ambari_commons.exceptions import FatalException
 from ambari_commons.os_utils import remove_file

@@ -23,6 +23,9 @@ import sys
 import os
 import signal
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons.exceptions import FatalException, NonFatalException
 from ambari_commons.logging_utils import set_verbose, set_silent, \
   print_info_msg, print_warning_msg, print_error_msg, set_debug_mode_from_options

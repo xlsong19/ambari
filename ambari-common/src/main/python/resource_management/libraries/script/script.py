@@ -47,6 +47,9 @@ from resource_management.libraries.script.config_dictionary import ConfigDiction
 from resource_management.core.resources.system import Execute
 from contextlib import closing
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 import ambari_simplejson as json # simplejson is much faster comparing to Python 2.6 json module and has the same functions set.
 
 if OSCheck.is_windows_family():

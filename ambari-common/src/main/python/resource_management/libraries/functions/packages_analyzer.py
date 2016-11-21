@@ -26,6 +26,9 @@ import threading
 from ambari_commons import OSCheck, OSConst
 from ambari_commons import shell
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 __all__ = ["installedPkgsByName", "allInstalledPackages", "allAvailablePackages", "nameMatch",
            "getInstalledRepos", "getInstalledPkgsByRepo", "getInstalledPkgsByNames", "getPackageDetails"]
 

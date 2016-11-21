@@ -22,6 +22,9 @@ import sys
 from resource_management import *
 from hcat import hcat
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class HCatClient(Script):
   def install(self, env):
     self.install_packages(env)

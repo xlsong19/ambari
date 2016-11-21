@@ -25,6 +25,9 @@ from resource_management.libraries.functions import hdp_select
 
 from metadata import metadata
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # todo: support rolling upgrade
 class AtlasClient(Script):
 

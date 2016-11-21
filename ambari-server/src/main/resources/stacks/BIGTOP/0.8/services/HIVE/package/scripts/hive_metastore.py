@@ -25,6 +25,9 @@ from hive import hive
 from hive_service import hive_service
 from mysql_service import mysql_service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class HiveMetastore(Script):
 
   def install(self, env):

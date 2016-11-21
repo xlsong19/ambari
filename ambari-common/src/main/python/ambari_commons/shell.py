@@ -30,6 +30,9 @@ import traceback
 import pprint
 import platform
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons import OSConst
 from ambari_commons.os_family_impl import OsFamilyImpl, OsFamilyFuncImpl
 

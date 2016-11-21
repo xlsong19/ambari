@@ -24,6 +24,8 @@ from resource_management import *
 from ambari_commons import OSConst
 from ambari_commons.os_family_impl import OsFamilyImpl
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class MapReduce2ServiceCheck(Script):
   def service_check(self, env):

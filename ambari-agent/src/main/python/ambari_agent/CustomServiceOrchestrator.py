@@ -25,6 +25,9 @@ import sys
 from ambari_commons import shell
 import threading
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from FileCache import FileCache
 from AgentException import AgentException
 from PythonExecutor import PythonExecutor

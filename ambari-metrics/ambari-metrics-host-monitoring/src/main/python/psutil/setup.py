@@ -11,6 +11,10 @@ in Python.
 
 import os
 import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
     from setuptools import setup, Extension
 except ImportError:

@@ -26,6 +26,8 @@ from resource_management.libraries.functions import hdp_select
 from oozie import oozie
 from oozie_service import oozie_service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class OozieClient(Script):
 

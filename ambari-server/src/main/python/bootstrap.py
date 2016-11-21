@@ -35,6 +35,9 @@ from datetime import datetime
 from ambari_commons import OSCheck, OSConst
 from ambari_commons.os_family_impl import OsFamilyFuncImpl, OsFamilyImpl
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 if OSCheck.is_windows_family():
   from ambari_commons.os_utils import run_os_command, run_in_shell
 else:

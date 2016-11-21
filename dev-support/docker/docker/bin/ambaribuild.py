@@ -17,6 +17,9 @@ import json
 import datetime
 from optparse import OptionParser
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 SKIP_TEST="-DskipTests"
 AMBARI_AUTH_HEADERS = "--header 'Authorization:Basic YWRtaW46YWRtaW4=' --header 'X-Requested-By: PIVOTAL'"
 AMBARI_BUILD_DOCKER_ROOT = "/tmp/ambari-build-docker"

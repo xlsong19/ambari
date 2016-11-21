@@ -21,6 +21,9 @@ import sys
 from resource_management import *
 from shared_initialization import *
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 #Hook for hosts with only client without other components
 class AfterInstallHook(Hook):
 

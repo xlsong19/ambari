@@ -23,6 +23,9 @@ import os
 from resource_management import *
 from resource_management.core.logger import Logger
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def ranger(name=None):
   if name == 'ranger_admin':
     setup_ranger_admin()

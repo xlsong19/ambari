@@ -28,6 +28,8 @@ import sys
 import os
 from datetime import datetime
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class NameNode(Script):
   def install(self, env):

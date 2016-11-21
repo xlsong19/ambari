@@ -23,6 +23,9 @@ import sys
 from resource_management import *
 from tez import tez
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class TezClient(Script):
   def install(self, env):
     self.install_packages(env)

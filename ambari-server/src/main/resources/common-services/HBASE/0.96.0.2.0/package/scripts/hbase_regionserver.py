@@ -30,6 +30,8 @@ from setup_ranger_hbase import setup_ranger_hbase
 from ambari_commons import OSCheck, OSConst
 from ambari_commons.os_family_impl import OsFamilyImpl
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class HbaseRegionServer(Script):
   def install(self, env):

@@ -45,6 +45,10 @@ import signal
 import warnings
 import errno
 import subprocess
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
     import pwd
 except ImportError:

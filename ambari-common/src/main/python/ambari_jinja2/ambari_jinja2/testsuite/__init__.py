@@ -17,6 +17,8 @@ import unittest
 from traceback import format_exception
 from ambari_jinja2 import loaders
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 here = os.path.dirname(os.path.abspath(__file__))
 

@@ -48,6 +48,9 @@ from ambari_agent.HeartbeatHandlers import HeartbeatStopHandlers, bind_signal_ha
 from ambari_agent.ExitHelper import ExitHelper
 from resource_management.libraries.functions.version import compare_versions
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 logger = logging.getLogger(__name__)
 
 AGENT_AUTO_RESTART_EXIT_CODE = 77

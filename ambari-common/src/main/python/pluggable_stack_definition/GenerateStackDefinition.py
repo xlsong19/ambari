@@ -30,6 +30,9 @@ from os.path import join
 import random
 import string
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def generate_random_string(size=7, chars=string.ascii_uppercase + string.digits):
   return ''.join(random.choice(chars) for _ in range(size))
 

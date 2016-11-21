@@ -13,6 +13,9 @@
 
 import sys, os
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # If your extensions are in another directory, add it here. If the directory
 # is relative to the documentation root, use os.path.abspath to make it
 # absolute, like shown here.

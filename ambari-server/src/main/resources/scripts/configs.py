@@ -24,6 +24,9 @@ import time
 import json
 import base64
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 HTTP_PROTOCOL = 'http'
 HTTPS_PROTOCOL = 'https'
 

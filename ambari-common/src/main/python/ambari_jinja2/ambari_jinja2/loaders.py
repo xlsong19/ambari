@@ -13,6 +13,10 @@ import sys
 import weakref
 from types import ModuleType
 from os import path
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
     from hashlib import sha1
 except ImportError:

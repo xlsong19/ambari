@@ -25,6 +25,8 @@ from resource_management import *
 from yarn import yarn
 from service import service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Resourcemanager(Script):
   def install(self, env):

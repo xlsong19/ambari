@@ -24,6 +24,8 @@ from yaml_config import yaml_config
 from storm import storm
 from service import service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Supervisor(Script):
   def install(self, env):

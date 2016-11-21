@@ -38,6 +38,9 @@ from ambari_commons.os_utils import run_os_command
 from ambari_server.serverUtils import is_server_runing
 from ambari_server.userInput import get_YN_input
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 HOST_UPDATE_HELPER_CMD = "{0} -cp {1} " + \
                             "org.apache.ambari.server.update.HostUpdateHelper {2}" + \
                             " > " + configDefaults.SERVER_OUT_FILE + " 2>&1"

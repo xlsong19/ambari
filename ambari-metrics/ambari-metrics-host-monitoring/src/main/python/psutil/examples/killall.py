@@ -12,6 +12,8 @@ import os
 import sys
 import psutil
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def main():
     if len(sys.argv) != 2:

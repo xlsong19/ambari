@@ -21,6 +21,9 @@ import os
 import sys
 import inspect
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 LOG = logging.getLogger(__name__)
 #------------------------------------------------------------------------------
 '''

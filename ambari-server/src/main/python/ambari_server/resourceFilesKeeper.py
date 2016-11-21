@@ -24,6 +24,8 @@ import zipfile
 import glob
 import pprint
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class KeeperException(Exception):
   pass

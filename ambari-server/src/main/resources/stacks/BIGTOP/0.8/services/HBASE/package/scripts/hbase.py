@@ -22,6 +22,9 @@ import os
 from resource_management import *
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def hbase(name=None # 'master' or 'regionserver' or 'client'
               ):
   import params

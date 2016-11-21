@@ -23,6 +23,9 @@ import json
 import sys
 import base64
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
   host = sys.argv[1]
   port = sys.argv[2]

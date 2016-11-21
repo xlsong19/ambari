@@ -21,6 +21,9 @@ import time
 from ambari_client.model.utils import get_REF_object, get_unicode, getREF_var_name, LIST_KEY
 from operator import itemgetter, attrgetter
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 __docformat__ = "epytext"
 
 LOG = logging.getLogger(__name__)

@@ -24,6 +24,8 @@ import os
 from ambari_commons import OSConst
 from ambari_commons.os_family_impl import OsFamilyFuncImpl, OsFamilyImpl
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class KnoxServiceCheck(Script):
   def service_check(self, env):

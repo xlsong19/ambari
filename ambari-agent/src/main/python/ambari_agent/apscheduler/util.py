@@ -7,6 +7,9 @@ from time import mktime
 import re
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 __all__ = ('asint', 'asbool', 'convert_to_datetime', 'timedelta_seconds',
            'time_difference', 'datetime_ceil', 'combine_opts',
            'get_callable_name', 'obj_to_ref', 'ref_to_obj', 'maybe_ref',

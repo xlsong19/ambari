@@ -23,6 +23,9 @@ import sys
 import os
 import shutil
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def build():
   path = os.path.dirname(os.path.abspath(__file__))
   build_path = path + os.sep + 'build'

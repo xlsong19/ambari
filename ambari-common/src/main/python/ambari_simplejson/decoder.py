@@ -4,6 +4,9 @@ import re
 import sys
 import struct
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_simplejson.scanner import make_scanner
 try:
     from ambari_simplejson._speedups import scanstring as c_scanstring

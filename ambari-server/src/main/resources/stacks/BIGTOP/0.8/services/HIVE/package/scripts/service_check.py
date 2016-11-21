@@ -25,6 +25,9 @@ import sys
 from hcat_service_check import hcat_service_check
 from webhcat_service_check import webhcat_service_check
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class HiveServiceCheck(Script):
   def service_check(self, env):
     import params

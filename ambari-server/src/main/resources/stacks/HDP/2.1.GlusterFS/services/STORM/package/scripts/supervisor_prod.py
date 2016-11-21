@@ -24,6 +24,8 @@ from storm import storm
 from service import service
 from supervisord_service import supervisord_service, supervisord_check_status
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Supervisor(Script):
   def install(self, env):

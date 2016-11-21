@@ -24,6 +24,9 @@ from resource_management.libraries.script import Script
 import subprocess
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class Hook(Script):
   """
   Executes a hook for a command for custom service. stdout and stderr are written to

@@ -21,6 +21,9 @@ limitations under the License.
 import sys
 from ambari_commons import OSCheck
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def main(argv=None):
   # Same logic that was in "os_type_check.sh"
   if len(sys.argv) != 2:

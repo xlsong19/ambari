@@ -24,6 +24,9 @@ from resource_management.core.logger import Logger
 
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class HAWQServiceCheck(Script):
   """
   Runs a set of simple HAWQ tests to verify if the service has been setup correctly

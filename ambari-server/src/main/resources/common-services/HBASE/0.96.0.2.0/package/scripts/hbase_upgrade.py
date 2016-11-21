@@ -22,6 +22,9 @@ import sys
 from resource_management.libraries.script import Script
 from resource_management.core.resources.system import Execute
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class HbaseMasterUpgrade(Script):
 
   def take_snapshot(self, env):

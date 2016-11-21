@@ -24,6 +24,9 @@ import subprocess
 import sys
 import tempfile
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from resource_management import *
 from utils import get_property_value
 from ambari_commons.os_utils import remove_file

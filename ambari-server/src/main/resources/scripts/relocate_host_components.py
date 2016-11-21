@@ -29,6 +29,9 @@ import json
 import base64
 import time
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 AMBARI_HOSTNAME = None
 AMBARI_PORT = 8080
 CLUSTER_NAME = None

@@ -28,6 +28,8 @@ from resource_management import Script
 
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 CONFIG_PARAM_PREFIX = 'component_configurations'
 CONFIG_PARAM_SEPARATOR = '/'

@@ -19,6 +19,10 @@ limitations under the License.
 """
 import os
 import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from optparse import OptionParser
 os.environ["PATH"] += os.pathsep + "/var/lib/ambari-agent"
 sys.path.append("/usr/lib/python2.6/site-packages")

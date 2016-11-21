@@ -20,6 +20,8 @@ import os
 import psutil
 from psutil._compat import print_
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def bytes2human(n):
     # http://code.activestate.com/recipes/578019

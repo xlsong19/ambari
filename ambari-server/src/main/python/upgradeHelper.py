@@ -114,6 +114,9 @@ import time
 import base64
 from urllib2 import HTTPPasswordMgrWithDefaultRealm, HTTPBasicAuthHandler, Request, build_opener, URLError, HTTPError
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
   # try to import new simplejson version, which should be faster than outdated python 2.6 version
   import ambari_simplejson as json

@@ -17,6 +17,9 @@ import struct
 import sys
 import warnings
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from psutil import _common
 from psutil import _psposix
 from psutil._common import (isfile_strict, usage_percent, deprecated)

@@ -45,6 +45,8 @@ from datetime import datetime, timedelta
 
 import psutil
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # --- curses stuff
 def tear_down():

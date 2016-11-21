@@ -26,6 +26,8 @@ from hbase import hbase
 from ambari_commons import OSCheck, OSConst
 from ambari_commons.os_family_impl import OsFamilyImpl
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class HbaseClient(Script):
   def install(self, env):

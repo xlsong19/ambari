@@ -26,6 +26,9 @@ import cStringIO
 from functools import wraps
 from resource_management.core.exceptions import Fail
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 PASSWORDS_HIDE_STRING = "[PROTECTED]"
 
 class AttributeDictionary(object):

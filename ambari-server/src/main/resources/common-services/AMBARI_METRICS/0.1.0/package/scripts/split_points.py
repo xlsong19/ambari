@@ -25,6 +25,9 @@ import math
 import collections
 import ast
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 metric_filename_ext = '.txt'
 # 5 regions for higher order aggregate tables
 other_region_static_count = 6

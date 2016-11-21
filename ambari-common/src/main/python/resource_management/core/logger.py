@@ -26,6 +26,9 @@ import logging
 from resource_management.libraries.script.config_dictionary import UnknownConfiguration
 from resource_management.core.utils import PasswordString
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 MESSAGE_MAX_LEN = 512
 DICTIONARY_MAX_LEN = 5
 

@@ -24,6 +24,8 @@ from resource_management import *
 from hbase import hbase
 from hbase_service import hbase_service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
          
 class HbaseRegionServer(Script):
   def install(self, env):

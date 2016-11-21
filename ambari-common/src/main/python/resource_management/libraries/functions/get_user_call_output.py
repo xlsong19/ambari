@@ -26,6 +26,9 @@ from resource_management.core import shell
 from resource_management.core.logger import Logger
 from resource_management.core.exceptions import Fail
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def get_user_call_output(command, user, quiet=False, is_checked_call=True, **call_kwargs):
   """
   This function eliminates only output of command inside the su, ignoring the su ouput itself.

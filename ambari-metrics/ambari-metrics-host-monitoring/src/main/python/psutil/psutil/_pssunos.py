@@ -12,6 +12,9 @@ import socket
 import subprocess
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from psutil import _common
 from psutil import _psposix
 from psutil._common import (conn_tmap, usage_percent, isfile_strict)

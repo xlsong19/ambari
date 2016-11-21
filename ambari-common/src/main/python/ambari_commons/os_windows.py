@@ -49,6 +49,9 @@ import wmi
 from ambari_commons.exceptions import FatalException
 from ambari_commons.logging_utils import print_info_msg, print_warning_msg
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 SERVICE_STATUS_UNKNOWN = "unknown"
 SERVICE_STATUS_STARTING = "starting"
 SERVICE_STATUS_RUNNING = "running"

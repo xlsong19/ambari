@@ -30,6 +30,9 @@ import urllib2
 import time
 import sys
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from ambari_commons.exceptions import FatalException, NonFatalException
 from ambari_commons.logging_utils import print_warning_msg, print_error_msg, print_info_msg, get_verbose
 from ambari_commons.os_check import OSConst

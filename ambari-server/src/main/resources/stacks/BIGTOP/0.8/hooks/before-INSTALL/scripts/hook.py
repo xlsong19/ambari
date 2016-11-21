@@ -22,6 +22,9 @@ from resource_management import *
 from shared_initialization import *
 from repo_initialization import *
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class BeforeInstallHook(Hook):
 
   def hook(self, env):

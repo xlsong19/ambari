@@ -22,6 +22,8 @@ from resource_management import *
 import sys
 import os
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def hive(name=None):
   import params

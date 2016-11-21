@@ -24,6 +24,8 @@ from storm import storm
 from service import service
 from service_check import ServiceCheck
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class DrpcServer(Script):
   def install(self, env):

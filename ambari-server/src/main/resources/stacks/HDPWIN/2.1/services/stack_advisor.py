@@ -24,6 +24,9 @@ from math import ceil
 
 from stack_advisor import DefaultStackAdvisor
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class HDPWIN21StackAdvisor(DefaultStackAdvisor):
 
   def getComponentLayoutValidations(self, services, hosts):

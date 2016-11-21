@@ -23,6 +23,8 @@ import sys
 from ambari_commons.os_family_impl import OsFamilyFuncImpl, OsFamilyImpl
 from ambari_commons import OSConst
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 @OsFamilyFuncImpl(os_family=OSConst.WINSRV_FAMILY)
 def hcat():

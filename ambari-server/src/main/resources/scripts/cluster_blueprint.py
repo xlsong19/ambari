@@ -31,6 +31,9 @@ import json
 import base64
 import os
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 SILENT = False
 ACTION = None
 PROTOCOL = "http"

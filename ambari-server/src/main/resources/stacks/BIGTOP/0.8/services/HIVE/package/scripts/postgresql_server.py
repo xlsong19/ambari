@@ -23,6 +23,9 @@ from resource_management import *
 
 from postgresql_service import postgresql_service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class PostgreSQLServer(Script):
 
   def install(self, env):

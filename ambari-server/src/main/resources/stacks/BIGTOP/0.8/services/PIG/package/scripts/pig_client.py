@@ -23,6 +23,8 @@ import sys
 from resource_management import *
 from pig import pig
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class PigClient(Script):
   def install(self, env):

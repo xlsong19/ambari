@@ -24,6 +24,9 @@ import threading
 import socket
 import subprocess
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 logger = logging.getLogger(__name__)
 FUSER_CMD = "fuser {0}/tcp 2>/dev/null | awk '{1}'"
 PSPF_CMD = "ps -fp {0}"

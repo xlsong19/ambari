@@ -30,6 +30,9 @@ import sys
 import time
 import urlparse
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # place this script in /var/www/cgi-bin of the Ganglia collector
 # requires 'yum install rrdtool-python' on the Ganglia collector
 '''

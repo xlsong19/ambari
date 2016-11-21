@@ -22,6 +22,8 @@ from ambari_jinja2.exceptions import TemplateSyntaxError, TemplateNotFound, \
 from ambari_jinja2.utils import import_string, LRUCache, Markup, missing, \
      concat, consume, internalcode, _encode_filename
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # for direct template usage we have up to ten living environments
 _spontaneous_environments = LRUCache(10)

@@ -24,6 +24,9 @@ import traceback
 import sys
 from ambari_commons.shell import getTempFiles
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 logger = logging.getLogger()
 
 if 'AMBARI_PID_DIR' in os.environ:

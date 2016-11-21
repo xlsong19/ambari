@@ -25,6 +25,9 @@ from hive import hive
 from ambari_commons.os_family_impl import OsFamilyImpl
 from ambari_commons import OSConst
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class HiveClient(Script):
   def install(self, env):
     import params

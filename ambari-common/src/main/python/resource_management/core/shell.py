@@ -37,6 +37,9 @@ from exceptions import ExecuteTimeoutException
 from resource_management.core.logger import Logger
 from ambari_commons.constants import AMBARI_SUDO_BINARY
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 # use quiet=True calls from this folder (logs get too messy duplicating the resources with its commands)
 RMF_FOLDER = 'resource_management/'
 EXPORT_PLACEHOLDER = "[RMF_EXPORT_PLACEHOLDER]"

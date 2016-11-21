@@ -30,6 +30,8 @@ from resource_management.core.logger import Logger
 from resource_management.core.shell import quote_bash_args
 from resource_management.core import utils
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class ConfigurationFormatter(Formatter):
   """

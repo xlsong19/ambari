@@ -24,6 +24,8 @@ from math import ceil, floor
 
 from stack_advisor import DefaultStackAdvisor
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class HDP206StackAdvisor(DefaultStackAdvisor):
 

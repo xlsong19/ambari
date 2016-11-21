@@ -26,6 +26,8 @@ import functions
 import ganglia_server_service
 from ambari_commons.os_check import OSCheck
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class GangliaServer(Script):
   def install(self, env):

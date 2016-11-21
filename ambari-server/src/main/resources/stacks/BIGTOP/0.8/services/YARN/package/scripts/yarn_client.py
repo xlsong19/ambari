@@ -24,6 +24,9 @@ from resource_management import *
 
 from yarn import yarn
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class YarnClient(Script):
 
   def install(self, env):

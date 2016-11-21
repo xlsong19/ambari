@@ -23,6 +23,8 @@ import sys
 import os.path
 import glob
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def webhcat():
   import params

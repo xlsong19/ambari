@@ -24,6 +24,9 @@ from resource_management import *
 
 from yarn import yarn
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class MapReduce2Client(Script):
 
   def install(self, env):

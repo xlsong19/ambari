@@ -11,6 +11,9 @@
     :license: BSD.
 """
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 from os.path import join, dirname, abspath
 try:
     from cProfile import Profile

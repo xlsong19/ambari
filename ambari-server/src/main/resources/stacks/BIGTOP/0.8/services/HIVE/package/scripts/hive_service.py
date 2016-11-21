@@ -23,6 +23,9 @@ import sys
 import time
 from resource_management.core.shell import call
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def hive_service(
     name,
     action='start'):

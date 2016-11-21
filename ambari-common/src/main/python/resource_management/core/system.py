@@ -30,6 +30,9 @@ from resource_management.core.utils import lazy_property
 from resource_management.core.exceptions import Fail
 from ambari_commons import OSCheck
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class System(object):
   @lazy_property
   def os(self):

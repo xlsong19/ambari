@@ -15,6 +15,8 @@ import traceback
 from ambari_jinja2.utils import CodeType, missing, internal_code
 from ambari_jinja2.exceptions import TemplateSyntaxError
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # how does the raise helper look like?
 try:

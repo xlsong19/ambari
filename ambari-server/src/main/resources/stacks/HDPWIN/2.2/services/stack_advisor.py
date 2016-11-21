@@ -23,6 +23,9 @@ import re
 import sys
 from urlparse import urlparse
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 def getSiteProperties(configurations, siteName):
   siteConfig = configurations.get(siteName)
   if siteConfig is None:

@@ -25,6 +25,8 @@ import ganglia
 import functions
 import ganglia_server_service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class GangliaServer(Script):
   def install(self, env):

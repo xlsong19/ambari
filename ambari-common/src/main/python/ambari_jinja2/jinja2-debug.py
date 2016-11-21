@@ -13,6 +13,9 @@ import sys
 import ambari_jinja2
 from werkzeug import script
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 env = ambari_jinja2.Environment(extensions=['ambari_jinja2.ext.i18n', 'ambari_jinja2.ext.do',
                                      'ambari_jinja2.ext.loopcontrols'])
 

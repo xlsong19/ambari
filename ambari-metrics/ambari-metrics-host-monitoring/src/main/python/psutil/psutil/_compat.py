@@ -10,6 +10,10 @@ __all__ = ["PY3", "int", "long", "xrange", "exec_", "callable", "namedtuple",
            "property", "wraps", "defaultdict", "update_wrapper", "lru_cache"]
 
 import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 try:
     import __builtin__
 except ImportError:

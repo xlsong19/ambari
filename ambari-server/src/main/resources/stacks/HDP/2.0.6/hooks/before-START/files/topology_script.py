@@ -21,6 +21,8 @@ import sys, os
 from string import join
 import ConfigParser
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 DEFAULT_RACK = "/default-rack"
 DATA_FILE_NAME =  os.path.dirname(os.path.abspath(__file__)) + "/topology_mappings.data"

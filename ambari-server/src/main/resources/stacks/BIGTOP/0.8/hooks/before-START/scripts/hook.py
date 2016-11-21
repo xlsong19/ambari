@@ -21,6 +21,9 @@ import sys
 from resource_management import *
 from shared_initialization import *
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class BeforeStartHook(Hook):
 
   def hook(self, env):

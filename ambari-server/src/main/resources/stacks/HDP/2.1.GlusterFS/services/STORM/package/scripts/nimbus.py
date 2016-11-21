@@ -23,6 +23,8 @@ from resource_management import *
 from storm import storm
 from service import service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Nimbus(Script):
   def install(self, env):

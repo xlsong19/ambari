@@ -23,6 +23,9 @@ from resource_management import format_hdp_stack_version, Script
 from resource_management.libraries.functions import format
 from resource_management.libraries.functions.default import default
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 import status_params
 
 # server configurations

@@ -25,6 +25,9 @@ from resource_management import *
 from yarn import yarn
 from service import service
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class Nodemanager(Script):
   def install(self, env):
     self.install_packages(env)

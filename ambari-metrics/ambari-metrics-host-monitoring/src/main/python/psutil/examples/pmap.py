@@ -35,6 +35,8 @@ import sys
 import psutil
 from psutil._compat import print_
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def main():
     if len(sys.argv) != 2:

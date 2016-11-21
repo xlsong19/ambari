@@ -21,6 +21,8 @@ import time
 import sys
 from threading import Thread
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def write_function(path, handle, interval):
   with open(path) as f:

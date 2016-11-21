@@ -44,6 +44,8 @@ import utils.osutils
 import utils.pluginutils
 from ambari_client.ambari_api import AmbariClient
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 configFile = "/etc/ambari-shell/conf/ambari-shell.ini"
 

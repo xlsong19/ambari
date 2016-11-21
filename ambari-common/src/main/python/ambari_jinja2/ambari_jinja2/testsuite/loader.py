@@ -23,6 +23,8 @@ from ambari_jinja2 import Environment, loaders
 from ambari_jinja2.loaders import split_template_path
 from ambari_jinja2.exceptions import TemplateNotFound
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class LoaderTestCase(JinjaTestCase):
 
