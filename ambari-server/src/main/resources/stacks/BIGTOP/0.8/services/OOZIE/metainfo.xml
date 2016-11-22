@@ -121,6 +121,16 @@
             </package>
           </packages>
         </osSpecific>
+
+      <osSpecifics>
+        <osSpecific>
+          <osFamily>kylin4</osFamily>
+            <package>
+              <name>libmysql-java</name>
+              <skipUpgrade>true</skipUpgrade>
+            </package>
+          </packages>
+        </osSpecific>
         
         <osSpecific>
           <osFamily>ubuntu12</osFamily>
