@@ -76,7 +76,7 @@
           </packages>
         </osSpecific>
         <osSpecific>
-          <osFamily>kylin</osFamily>
+          <osFamily>kylin4444</osFamily>
           <packages>
             <package>
               <name>sqoop</name>
